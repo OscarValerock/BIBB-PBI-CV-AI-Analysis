@@ -1,2 +1,3 @@
 PyMuPDF
 openai
+ipykernel
