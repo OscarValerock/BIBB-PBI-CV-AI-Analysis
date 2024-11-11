@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Oscar Martínez - Resume</title>
+    <!-- Google Fonts for modern typography -->
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap'
+        rel='stylesheet' />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0 20px 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::after {
+            background-color: #2980b9;
+            border-radius: 2px;
+            bottom: 0;
+            content: '';
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 50px;
+        }
+
+        .ai-notification {
+            align-items: center;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+            color: #856404;
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .ai-notification svg {
+            margin-right: 8px;
+        }
+
+        .ai-notification span {
+            line-height: 1.2;
+        }
+
+        .card,
+        .container,
+        .container-head {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+        }
+
+        .card-content h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .chip {
+            background-color: #ecf0f1;
+            border-radius: 20px;
+            color: #2c3e50;
+            cursor: default;
+            font-size: 14px;
+            margin: 8px;
+            padding: 10px 15px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .chip:hover {
+            background-color: #d0d7de;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .header-content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .languages p {
+            margin: 5px 15px 5px 0;
+        }
+
+        .rating-chip {
+            border: 1px solid transparent;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 80px;
+        }
+
+        .high {
+            background-color: #66bd631a;
+            border-color: #66bd63;
+            color: #66bd63;
+        }
+
+        .medium {
+            background-color: #fdae611a;
+            border-color: #fdae61;
+            color: #fdae61;
+        }
+
+        .low {
+            background-color: #d730271a;
+            border-color: #d73027;
+            color: #d73027;
+        }
+
+        .rating-rationale p {
+            margin: 0;
+        }
+
+        .ratings-section {
+            align-items: flex-start;
+            background-color: #f8f9fa;
+            border: 1px solid #dfe6e9;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .requirements {
+            margin-top: 15px;
+        }
+
+        .requirements ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .requirements ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .requirements ul li::before {
+            color: #2980b9;
+            content: '•';
+            font-size: 20px;
+            left: 0;
+            line-height: 18px;
+            position: absolute;
+            top: 0;
+        }
+
+        .chip-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .summary {
+            padding-top: 20px;
+        }
+
+        .job-education-item {
+            margin-bottom: 30px;
+        }
+
+        .job-education-item h3 {
+            color: #2980b9;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .job-education-item h4 {
+            color: #7f8c8d;
+            font-weight: 400;
+            margin: 5px 0;
+        }
+
+        .work-experience,
+        .education {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style='display: '''>
+        <!-- Header with contact information and ratings -->
+        <div class='container-head'>
+            <div class='card-content'>
+                <h2>Alex Johnson</h2>
+                <div class='header-content'>
+
+                    <div class='contact-info'>
+                        <p><strong>Email:</strong>alex.johnson@email.com</p>
+                        <p><strong>Phone:</strong>(123) 456-78906</p>
+                        <p><strong>Location:</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AI Notification -->
+        <div class='ai-notification'>
+            <svg width='16' height='16' viewBox='0 0 24 24' aria-label='Robot Icon' role='img'>
+                <path
+                    d='M12 2a1 1 0 00-1 1v1H9a3 3 0 00-3 3v10a3 3 0 003 3h6a3 3 0 003-3V7a3 3 0 00-3-3h-2V3a1 1 0 00-1-1zm-2 6a1 1 0 110 2 1 1 0 010-2zm6 1a1 1 0 11-2 0 1 1 0 012 0zM8 14h8v2H8v-2z'
+                    fill='#856404' />
+            </svg>
+            <span> This content is AI-generated. Please review for accuracy and relevance.
+            </span>
+        </div>
+
+        <!-- Summary Section -->
+        <div class='container' style='display:'''>
+            <h2>General assessment</h2>
+            <!-- Ratings and rationale -->
+
+            <p class='summary'> <b>Profile summary: </b>Highly skilled Power BI Developer with over 6 years of
+                experience in developing data models, creating dashboards, and producing in-depth reports to support
+                data-driven decision-making. Proven track record in leveraging Power BI tools to deliver business
+                insights and drive process improvements.</p>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex Johnson is a strong candidate for the Group Senior Expert BI role, with relevant education
+                        and certifications, and a solid background in Power BI and Azure. However, the primary gaps are
+                        in lacking specific experience with SAP BW and ABAP, and slightly less work experience than
+                        required. Addressing these gaps would make Alex an almost perfect fit for the role.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip high'>80</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class='container' style='display:'''>
+            <h2>Work Experience</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                    <li>Minimum 7-8 years of professional experience in a senior Business Intelligence role.</li>
+                </ul>
+            </div>
+
+
+            <!-- Work experience items -->
+            <div class='work-experience'>
+                    <div class='job-education-item'>
+                        <h3>Senior Power BI Developer</h3>
+                        <h4>ABC Corporation | New York, United States | 2018 - </h4>
+                    </div>
+                    <div class='job-education-item'>
+                        <h3>Power BI Developer</h3>
+                        <h4>XYZ Ltd | San Francisco, United States | 2015 - 2017</h4>
+                    </div>
+            </div>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex has 6 years of experience in roles highly relevant to business intelligence, focusing on
+                        Power BI. However, the job description calls for 7-8 years of experience, indicating a minor gap
+                        in the candidate's experience.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip high'>80</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class='container' style='display:'''>
+            <h2>Education</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                    <li>Degree in Information Technology or a comparable education with an IT background.</li>
+                </ul>
+            </div>
+            <!-- Education items -->
+            <div class='education'>
+                <div class='job-education-item'>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>University of California, Berkeley | 2011 - 2015</h4>
+                </div>
+            </div>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex holds a Bachelor of Science in Computer Science, which is relevant to the IT background
+                        required by the position. However, the role specifies 'a degree in Information Technology or
+                        comparable education,' which may favor a more specialized degree in IT.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip high'>90</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class='container' style='display:'''>
+            <h2>Skills</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                    <li>Demonstrate initiative and a proactive approach to daily tasks.</li>
+                    <li>Result oriented with strong analytical skills.</li>
+                    <li>Proficiency in SAP BW based Data Warehouse solutions, including ABAP.</li>
+                    <li>Experience in Azure based Data Warehouse solutions, including SQL, Power BI, DAX (bonus).</li>
+                    <li>Practical experience collaborating with business stakeholders.</li>
+                </ul>
+            </div>
+            <div class='requirements'>
+                <p><b>Candidate's skills:</b></p>
+            </div>
+            <div class='chip-container'>
+
+                <div class='chip'>teamwork</div>
+                <div class='chip'>communication</div>
+                <div class='chip'>leadership</div>
+            </div>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex demonstrates strong skills in Power BI, SQL, and DAX, which align well with the role's
+                        requirements. However, proficiency in SAP BW and ABAP is notably missing, which are critical for
+                        the position.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip medium'>70</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class='container' style='display:'''>
+            <h2>Certifications and Courses</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                </ul>
+            </div>
+            <div class='requirements'>
+                <p><b>Candidate's Certifications:</b></p>
+            </div>
+            <div class='chip-container'>
+
+                <div class='chip'>Microsoft Certified: Data Analyst Associate</div>
+                <div class='chip'>Microsoft Certified: Azure Data Engineer Associate</div>
+            </div>
+            <div class='ratings-section'>
+
+                <div class='rating-rationale'>
+                    <p>Alex possesses relevant certifications like Microsoft Certified: Data Analyst Associate and
+                        Microsoft Certified: Azure Data Engineer Associate, indicating a strong commitment to continuous
+                        professional development.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip high'>100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages Section -->
+        <div class='container' style='display:'''>
+            <h2>Languages</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                    <li>English: Fluent</li>
+                </ul>
+            </div>
+            <div class='requirements'>
+                <p><b>Candidate's languages:</b></p>
+            </div>
+            <div class='languages'>
+                <p><strong>English:</strong> full professional proficiency</p>
+                <p><strong>Spanish:</strong> full professional proficiency</p>
+            </div>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex is fluent in English, meeting the language requirement for the position.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip high'>100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Systems Knowledge Section -->
+        <div class='container' style='display:'''>
+            <h2>Systems Knowledge</h2>
+            <p><b>Requirements:</b></p>
+            <div class='requirements'>
+                <ul>
+                    <li>SAP BW based Data Warehouse solutions</li>
+                    <li>ABAP</li>
+                    <li>Azure based Data Warehouse solutions (including SQL, Power BI, DAX)</li>
+                </ul>
+            </div>
+            <div class='requirements'>
+                <p><b>Candidate's skills:</b></p>
+            </div>
+            <div class='chip-container'>
+
+                <div class='chip'>Power BI</div>
+                <div class='chip'>DAX</div>
+                <div class='chip'>Power Query</div>
+                <div class='chip'>SQL</div>
+                <div class='chip'>Python</div>
+                <div class='chip'>R</div>
+                <div class='chip'>Azure Data Services</div>
+                <div class='chip'>ETL Processes</div>
+                <div class='chip'>Data Warehousing</div>
+                <div class='chip'>Advanced Excel</div>
+            </div>
+            <div class='ratings-section'>
+                <div class='rating-rationale'>
+                    <p>Alex has strong experience with Power BI, DAX, SQL, and Azure-based solutions but lacks specific
+                        experience with SAP BW and ABAP, which are crucial for the role.</p>
+                </div>
+                <div class='ratings'>
+                    <div class='rating-chip medium'>70</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
