@@ -1,4 +1,4 @@
-![Alt Text](images/hero.png)
+![Alt Text](images/heroPower BI AI CV Analysis for Recruitment.png)
 
 ### **Project Overview**
 
@@ -95,5 +95,6 @@ graph TD
     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY2NTg0NjIsMTA4NzA3OTI0OF19
+eyJoaXN0b3J5IjpbMTkwOTY4MjUwLC0xOTI2NjU4NDYyLDEwOD
+cwNzkyNDhdfQ==
 -->
