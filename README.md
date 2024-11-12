@@ -1,4 +1,4 @@
-![Alt Text](images/heroPower BI AI CV Analysis for Recruitment.png)
+![BIBB-PBI-CV-AI-Analysis](images/heroPower BI AI CV Analysis for Recruitment.png)
 
 ### **Project Overview**
 
@@ -95,6 +95,6 @@ graph TD
     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTY4MjUwLC0xOTI2NjU4NDYyLDEwOD
+eyJoaXN0b3J5IjpbMjgxNzIzNDk5LC0xOTI2NjU4NDYyLDEwOD
 cwNzkyNDhdfQ==
 -->
