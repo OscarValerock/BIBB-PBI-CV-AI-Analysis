@@ -1,4 +1,4 @@
-![Alt Text](images/Power BI AI CV Analysis for Recruitment.png)
+![Alt Text](images/hero.png)
 
 ### **Project Overview**
 
