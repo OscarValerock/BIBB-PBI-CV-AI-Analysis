@@ -33,18 +33,6 @@ h2 {
     text-align: center;
 }
 
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 50px;
-    height: 3px;
-    background-color: #2980b9;
-    border-radius: 2px;
-    transform: translateX(-50%);
-}
-
 /* Typography */
 p {
     font-size: 15px;
@@ -115,6 +103,12 @@ p {
 .card-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* AI Notification */
@@ -196,6 +190,7 @@ p {
     border-radius: 6px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .high {
     background-color: #66bd631a;
@@ -288,7 +283,13 @@ p {
 
         <!-- Summary Section -->
         <div class='container' style='display:'''>
-            <h2>General assessment</h2>
+            <div class = 'section-header'>
+                <h2>General assessment</h2>
+                <div class='ratings'>
+                    <div class='rating-chip high'>80</div>
+                </div>
+            </div>
+            
             <!-- Ratings and rationale -->
 
             <p class='summary'> <b>Profile summary: </b>Highly skilled Power BI Developer with over 6 years of
@@ -302,15 +303,18 @@ p {
                         in lacking specific experience with SAP BW and ABAP, and slightly less work experience than
                         required. Addressing these gaps would make Alex an almost perfect fit for the role.</p>
                 </div>
-                <div class='ratings'>
-                    <div class='rating-chip high'>80</div>
-                </div>
+                
             </div>
         </div>
 
         <!-- Work Experience Section -->
         <div class='container' style='display:'''>
-            <h2>Work Experience</h2>
+            <div class = 'section-header'>
+                <h2>Work Experience</h2>
+                <div class='ratings'>
+                    <div class='rating-chip high'>80</div>
+                </div>
+            </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -332,19 +336,22 @@ p {
             </div>
             <div class='ratings-section'>
                 <div class='rating-rationale'>
-                    <p>Alex has 6 years of experience in roles highly relevant to business intelligence, focusing on
+                    <p>🤖 Alex has 6 years of experience in roles highly relevant to business intelligence, focusing on
                         Power BI. However, the job description calls for 7-8 years of experience, indicating a minor gap
                         in the candidate's experience.</p>
-                </div>
-                <div class='ratings'>
-                    <div class='rating-chip high'>80</div>
                 </div>
             </div>
         </div>
 
         <!-- Education Section -->
         <div class='container' style='display:'''>
-            <h2>Education</h2>
+            <div class = 'section-header'>
+                <h2>Education</h2>
+                <div class='ratings'>
+                    <div class='rating-chip high'>90</div>
+                </div>
+            </div>
+            
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -364,15 +371,18 @@ p {
                         required by the position. However, the role specifies 'a degree in Information Technology or
                         comparable education,' which may favor a more specialized degree in IT.</p>
                 </div>
-                <div class='ratings'>
-                    <div class='rating-chip high'>90</div>
-                </div>
+                
             </div>
         </div>
 
         <!-- Skills Section -->
         <div class='container' style='display:'''>
-            <h2>Skills</h2>
+            <div class = 'section-header'>
+                <h2>Skills</h2>
+                <div class='ratings'>
+                    <div class='rating-chip medium'>70</div>
+                </div>
+            </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -398,15 +408,19 @@ p {
                         requirements. However, proficiency in SAP BW and ABAP is notably missing, which are critical for
                         the position.</p>
                 </div>
-                <div class='ratings'>
-                    <div class='rating-chip medium'>70</div>
-                </div>
+                
             </div>
         </div>
 
         <!-- Certifications Section -->
         <div class='container' style='display:'''>
-            <h2>Certifications and Courses</h2>
+            <div class = 'section-header'>
+                <h2>Certifications and Courses</h2>
+                <div class='ratings'>
+                    <div class='rating-chip high'>100</div>
+                </div>
+            </div>
+            
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -427,15 +441,18 @@ p {
                         Microsoft Certified: Azure Data Engineer Associate, indicating a strong commitment to continuous
                         professional development.</p>
                 </div>
-                <div class='ratings'>
-                    <div class='rating-chip high'>100</div>
-                </div>
             </div>
         </div>
 
         <!-- Languages Section -->
         <div class='container' style='display:'''>
-            <h2>Languages</h2>
+            <div class = 'section-header'>
+                <h2>Languages</h2>
+                <div class='ratings'>
+                    <div class='rating-chip high'>100</div>
+                </div>
+            </div>
+            
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -453,15 +470,18 @@ p {
                 <div class='rating-rationale'>
                     <p>Alex is fluent in English, meeting the language requirement for the position.</p>
                 </div>
-                <div class='ratings'>
-                    <div class='rating-chip high'>100</div>
-                </div>
+                
             </div>
         </div>
 
         <!-- Systems Knowledge Section -->
         <div class='container' style='display:'''>
-            <h2>Systems Knowledge</h2>
+            <div class = 'section-header'>
+                <h2>Systems Knowledge</h2>
+                <div class='ratings'>
+                    <div class='rating-chip medium'>70</div>
+                </div>
+            </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -490,9 +510,6 @@ p {
                 <div class='rating-rationale'>
                     <p>Alex has strong experience with Power BI, DAX, SQL, and Azure-based solutions but lacks specific
                         experience with SAP BW and ABAP, which are crucial for the role.</p>
-                </div>
-                <div class='ratings'>
-                    <div class='rating-chip medium'>70</div>
                 </div>
             </div>
         </div>
