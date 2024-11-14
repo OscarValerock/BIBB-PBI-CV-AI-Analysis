@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700&display=swap' />
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' rel='stylesheet'>
+
+    <style>
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px; /* Add a small margin if needed */
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            max-width: 100%;
+            margin: 0;
+            min-height: 100vh;
+            height: auto;
+            letter-spacing: 0.1em;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 2px;
+            margin-top: 0px;
+            
+        }
+
+        .heart {
+            color: #f50057;
+            vertical-align: -2px;
+        }
+
+        .channels {
+            display: flex;
+            max-width: 400px;
+            gap: 10px;
+            right: 0;
+        }
+
+        .channels_item {
+            transition: transform 0.2s;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        .channels_item:hover {
+            transform: scale(1.25) rotate(1turn);
+            transition: transform 1.5s;
+            color: #ec213b;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><strong>Your Title Here</strong> </h1>
+    <div>
+        <p>
+            Made with <i class='ri-heart-3-fill heart'></i> by Oscar Martinez
+        </p>
+    </div>
+
+    <div class='channels'>
+        <a class='channels_item' href='https://bibb.pro' target='_blank'>
+            <i class='ri-pages-fill ri-1x'></i>
+        </a>
+        <a class='channels_item' href='https://www.linkedin.com/in/oscarmartinezv/' target='_blank'>
+            <i class='ri-linkedin-box-fill ri-1x'></i>
+        </a>
+        <a class='channels_item' href='https://www.linkedin.com/in/oscarmartinezv/' target='_blank'>
+            <i class='ri-github-fill ri-1x'></i>
+        </a>
+    </div>
+</body>
+</html>

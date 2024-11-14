@@ -9,311 +9,307 @@
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap'
         rel='stylesheet' />
     <style>
-/* Global Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Base Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    padding: 5px;
-    font-size: 15px;
-}
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 5px;
+            font-size: 15px;
+        }
 
-h2 {
-    position: relative;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    font-size: 22px;
-    color: #2c3e50;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
+        h1 {
+            font-size: 30px;
+            color: #2c3e50;
+            text-align: center;
+            padding-right: 20px;
 
-/* Typography */
-p {
-    font-size: 15px;
-}
+        }
 
-.contact-info p,
-.languages p,
-.rating-rationale p {
-    font-size: 13px;
-}
+        h2 {
+            position: relative;
+            font-size: 22px;
+            color: #2c3e50;
+            text-align: center;
+        }
 
-.contact-info p {
-    margin: 5px 0;
-    text-align: center;
-}
-
-.languages p {
-    margin: 5px 15px 5px 0;
-}
-
-.rating-rationale p {
-    margin: 0;
-}
-
-/* Layout */
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1260px;
-    margin: 0 auto;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.summary {
-    padding-top: 20px;
-}
-
-/* Components */
-
-/* Container Styles */
-.card,
-.container-head {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 100%;
-    margin: 10px auto 10px;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 49%;
-    margin: 5px 0 10px;
-}
-
-.card-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* AI Notification */
-.ai-notification {
-    display: flex;
-    align-items: center;
-    background-color: #fff3cd;
-    border: 1px solid #ffeeba;
-    border-radius: 4px;
-    color: #856404;
-    font-size: 14px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.ai-notification svg {
-    margin-right: 8px;
-}
-
-.ai-notification span {
-    line-height: 1.2;
-}
-
-/* Chip Styles */
-.chip {
-    display: inline-block;
-    background-color: #ecf0f1;
-    border-radius: 20px;
-    color: #2c3e50;
-    cursor: default;
-    padding: 6px 10px;
-    margin: 5px;
-    font-size: 12px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-.chip:hover {
-    background-color: #d0d7de;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.chip-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-/* Rating Section */
-.ratings-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0 0;
-    background-color: #f8f9fa;
-    border: 1px solid #dfe6e9;
-    border-radius: 8px;
-}
-
-.rating-rationale {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.ratings {
-    flex-shrink: 0;
-}
-
-.rating-chip {
-    display: inline-block;
-    width: 80px;
-    padding: 8px 16px;
-    font-size: 14px;
-    text-align: center;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        /* Typography */
+        p {
+            font-size: 15px;
+        }
 
 
-.high {
-    background-color: #66bd631a;
-    border-color: #66bd63;
-    color: #66bd63;
-}
+        .languages p,
+        .rating-rationale p {
+            font-size: 13px;
+        }
 
-.medium {
-    background-color: #fdae611a;
-    border-color: #fdae61;
-    color: #fdae61;
-}
+        .languages p {
+            margin: 5px 15px 5px 0;
+        }
 
-.low {
-    background-color: #d730271a;
-    border-color: #d73027;
-    color: #d73027;
-}
+        .rating-rationale p {
+            margin: 0;
+        }
 
-/* Requirements */
-.requirements {
-    margin-top: 10px;
-}
+        /* Layout */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
 
-.requirements ul {
-    padding-left: 15px;
-}
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
 
-.requirements ul li {
-    position: relative;
-    margin-bottom: 5px;
-}
+        .summary {
+            padding-top: 20px;
+        }
 
-.requirements ul li::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 16px;
-}
+        /* Components */
 
-/* Job and Education Items */
-.job-education-item {
-    margin-bottom: 20px;
-}
+        /* Container Styles */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 100%;
+            margin: 10px auto 10px;
+        }
 
-.job-education-item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #2980b9;
-}
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 49%;
+            margin: 5px 0 10px;
+            /* Animation styles */
+            opacity: 0;
+            /* Start invisible */
+            animation: fadeInUp 0.8s ease-in-out forwards;
+        }
 
-.job-education-item h4 {
-    margin: 5px 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: #7f8c8d;
-}
+        .card-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+        }
+
+        .section-name {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        /* AI Notification */
+        .ai-notification {
+            display: flex;
+            align-items: center;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+            color: #856404;
+            font-size: 14px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ai-notification svg {
+            margin-right: 8px;
+        }
+
+        .ai-notification span {
+            line-height: 1.2;
+        }
+
+        /* Chip Styles */
+        .chip {
+            display: inline-block;
+            background-color: #ecf0f1;
+            border-radius: 20px;
+            color: #2c3e50;
+            cursor: default;
+            padding: 6px 10px;
+            margin: 5px;
+            font-size: 12px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .chip:hover {
+            background-color: #d0d7de;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .chip-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        /* Rating Section */
+        .ratings-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0 0;
+            background-color: #f8f9fa;
+            border: 1px solid #dfe6e9;
+            border-radius: 8px;
+        }
+
+        .rating-rationale {
+            flex: 1;
+            margin-right: 10px;
+        }
 
 
+
+        .rating-chip {
+            display: inline-block;
+            width: 80px;
+            padding: 8px 16px;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+        .high {
+            background-color: #66bd631a;
+            border-color: #66bd63;
+            color: #66bd63;
+        }
+
+        .medium {
+            background-color: #fdae611a;
+            border-color: #fdae61;
+            color: #fdae61;
+        }
+
+        .low {
+            background-color: #d730271a;
+            border-color: #d73027;
+            color: #d73027;
+        }
+
+        /* Requirements */
+        .requirements {
+            margin-top: 10px;
+        }
+
+        .requirements ul {
+            padding-left: 15px;
+        }
+
+        .requirements ul li {
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .requirements ul li::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 16px;
+        }
+
+        /* Job and Education Items */
+
+
+        .job-education-item h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #2980b9;
+        }
+
+        .job-education-item h4 {
+            margin: 5px 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: #7f8c8d;
+        }
+
+        /* Keyframes for fade-in and slide-up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Header with contact information and ratings -->
-    <div class='container-head'>
-        <div class='card-content'>
-            <h2>Alex Johnson</h2>
-            <div class='header-content'>
+    <!-- General assessment Section -->
+    <div class='card' style='display:'''>
 
-                <div class='contact-info'>
-                    <p><strong>Email:</strong>alex.johnson@email.com</p>
-                    <p><strong>Phone:</strong>(123) 456-78906</p>
-                    <p><strong>Location:</strong></p>
-                </div>
+        <!-- AI Notification -->
+        <div class='ai-notification'>
+            🤖 This content is AI-generated. Please review for accuracy and relevance.
+        </div>
+        <!-- Name general rating -->
+        <div class='section-name'>
+            <h1>Alex Johnson</h1>
+            <div class='rating-chip high'>80</div>
+        </div>
+
+        <!-- Rationale -->
+        <div class = 'section-header'>
+            <h2>General assessment</h2>
+        </div>
+        <p> <b>Profile summary: </b>Highly skilled Power BI Developer with over 6 years of
+            experience in developing data models, creating dashboards, and producing in-depth reports to support
+            data-driven decision-making. Proven track record in leveraging Power BI tools to deliver business
+            insights and drive process improvements.</p>
+        <div class='ratings-section'>
+            <div class='rating-rationale'>
+                <p>Alex Johnson is a strong candidate for the Group Senior Expert BI role, with relevant education
+                    and certifications, and a solid background in Power BI and Azure. However, the primary gaps are
+                    in lacking specific experience with SAP BW and ABAP, and slightly less work experience than
+                    required. Addressing these gaps would make Alex an almost perfect fit for the role.</p>
             </div>
         </div>
     </div>
-    <!-- AI Notification -->
-    <div class='ai-notification'>
-        <svg width='16' height='16' viewBox='0 0 24 24' aria-label='Robot Icon' role='img'>
-            <path
-                d='M12 2a1 1 0 00-1 1v1H9a3 3 0 00-3 3v10a3 3 0 003 3h6a3 3 0 003-3V7a3 3 0 00-3-3h-2V3a1 1 0 00-1-1zm-2 6a1 1 0 110 2 1 1 0 010-2zm6 1a1 1 0 11-2 0 1 1 0 012 0zM8 14h8v2H8v-2z'
-                fill='#856404' />
-        </svg>
-        <span> This content is AI-generated. Please review for accuracy and relevance.
-        </span>
-    </div>
+    <!-- Main Content Section -->
     <div class='main-content'>
-
-        <!-- Summary Section -->
-        <div class='container' style='display:'''>
-            <div class = 'section-header'>
-                <h2>General assessment</h2>
-                <div class='ratings'>
-                    <div class='rating-chip high'>80</div>
-                </div>
-            </div>
-            
-            <!-- Ratings and rationale -->
-
-            <p class='summary'> <b>Profile summary: </b>Highly skilled Power BI Developer with over 6 years of
-                experience in developing data models, creating dashboards, and producing in-depth reports to support
-                data-driven decision-making. Proven track record in leveraging Power BI tools to deliver business
-                insights and drive process improvements.</p>
-            <div class='ratings-section'>
-                <div class='rating-rationale'>
-                    <p>Alex Johnson is a strong candidate for the Group Senior Expert BI role, with relevant education
-                        and certifications, and a solid background in Power BI and Azure. However, the primary gaps are
-                        in lacking specific experience with SAP BW and ABAP, and slightly less work experience than
-                        required. Addressing these gaps would make Alex an almost perfect fit for the role.</p>
-                </div>
-                
-            </div>
-        </div>
-
         <!-- Work Experience Section -->
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Work Experience</h2>
-                <div class='ratings'>
-                    <div class='rating-chip high'>80</div>
-                </div>
+                <div class='rating-chip high'>80</div>
             </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>
@@ -336,7 +332,7 @@ p {
             </div>
             <div class='ratings-section'>
                 <div class='rating-rationale'>
-                    <p>🤖 Alex has 6 years of experience in roles highly relevant to business intelligence, focusing on
+                    <p>Alex has 6 years of experience in roles highly relevant to business intelligence, focusing on
                         Power BI. However, the job description calls for 7-8 years of experience, indicating a minor gap
                         in the candidate's experience.</p>
                 </div>
@@ -347,11 +343,9 @@ p {
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Education</h2>
-                <div class='ratings'>
-                    <div class='rating-chip high'>90</div>
-                </div>
+                <div class='rating-chip high'>90</div>
             </div>
-            
+
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -371,7 +365,7 @@ p {
                         required by the position. However, the role specifies 'a degree in Information Technology or
                         comparable education,' which may favor a more specialized degree in IT.</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -379,9 +373,7 @@ p {
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Skills</h2>
-                <div class='ratings'>
-                    <div class='rating-chip medium'>70</div>
-                </div>
+                <div class='rating-chip medium'>70</div>
             </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>
@@ -408,7 +400,7 @@ p {
                         requirements. However, proficiency in SAP BW and ABAP is notably missing, which are critical for
                         the position.</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -416,11 +408,9 @@ p {
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Certifications and Courses</h2>
-                <div class='ratings'>
-                    <div class='rating-chip high'>100</div>
-                </div>
+                <div class='rating-chip high'>100</div>
             </div>
-            
+
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -448,11 +438,9 @@ p {
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Languages</h2>
-                <div class='ratings'>
-                    <div class='rating-chip high'>100</div>
-                </div>
+                <div class='rating-chip high'>100</div>
             </div>
-            
+
             <p><b>Requirements:</b></p>
             <div class='requirements'>
                 <ul>
@@ -470,7 +458,7 @@ p {
                 <div class='rating-rationale'>
                     <p>Alex is fluent in English, meeting the language requirement for the position.</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -478,9 +466,7 @@ p {
         <div class='container' style='display:'''>
             <div class = 'section-header'>
                 <h2>Systems Knowledge</h2>
-                <div class='ratings'>
-                    <div class='rating-chip medium'>70</div>
-                </div>
+                <div class='rating-chip medium'>70</div>
             </div>
             <p><b>Requirements:</b></p>
             <div class='requirements'>

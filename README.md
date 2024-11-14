@@ -1,6 +1,6 @@
 ![BIBB-PBI-CV-AI-Analysis](images/hero.png)
 
-[![Get the full story](https://img.shields.io/badge/Get%20Full%20Story-blue)](https://bibb.pro)
+[![Get the full story](https://img.shields.io/badge/Get%20Full%20Story-blue)](https://www.bibb.pro/post/power-bi-ai-cv-analysis-recruitment)
 
 ### **Project Overview**
 
