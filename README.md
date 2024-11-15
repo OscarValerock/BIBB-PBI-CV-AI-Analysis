@@ -2,7 +2,33 @@
 
 [![Get the full story](https://img.shields.io/badge/Get%20Full%20Story-blue)](https://www.bibb.pro/post/power-bi-ai-cv-analysis-recruitment)
 
-### **Project Overview**
+### Legal Considerations of Using LLM on Personal Data
+
+Before implementing AI-driven CV analysis on a productive environment, we advise consulting with a legal specialist to ensure compliance with relevant data protection laws. Key considerations include:
+
+1.  **Consent and Purpose**
+    
+    -   Obtain clear, explicit consent from individuals before processing their data.
+    -   Limit data usage strictly to the recruitment process, avoiding any secondary purposes.
+2.  **Data Anonymization**
+    
+    -   Remove or mask personally identifiable information (PII) before processing CVs to minimize privacy risks.
+    -   This includes names, contact details, and other sensitive identifiers.
+3.  **Review API Policies**
+    
+    -   Familiarize yourself with OpenAI's usage policies to avoid transmitting unnecessary sensitive information.
+    -   Ensure secure transmission of data to and from the API.
+4.  **Bias and Fairness**
+    
+    -   Regularly review AI outputs for potential bias or unfair patterns in candidate evaluations.
+    -   Provide additional checks to ensure all candidates are assessed equitably.
+5.  **Security and Transparency**
+    
+    -   Use encryption to protect data during storage and transmission.
+    -   Clearly inform candidates about how AI is used in the recruitment process and provide options to withdraw their data if needed.
+
+
+## **Project Overview**
 
 The project consists of a Jupyter notebook that:
 
@@ -97,6 +123,6 @@ graph TD
     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3MzExMTY2LDI4MTcyMzQ5OSwtMTkyNj
-Y1ODQ2MiwxMDg3MDc5MjQ4XX0=
+eyJoaXN0b3J5IjpbLTUyNjQ1MjA2NCwyMTczMTExNjYsMjgxNz
+IzNDk5LC0xOTI2NjU4NDYyLDEwODcwNzkyNDhdfQ==
 -->
