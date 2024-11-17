@@ -1,5 +1,7 @@
 ![BIBB-PBI-CV-AI-Analysis](images/hero.png)
 
+
+
 [![Get the full story](https://img.shields.io/badge/Get%20Full%20Story-blue)](https://www.bibb.pro/post/power-bi-ai-cv-analysis-recruitment)
 
 ### Legal Considerations of Using LLM on Personal Data
@@ -123,6 +125,7 @@ graph TD
     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjQ1MjA2NCwyMTczMTExNjYsMjgxNz
-IzNDk5LC0xOTI2NjU4NDYyLDEwODcwNzkyNDhdfQ==
+eyJoaXN0b3J5IjpbLTExNjQ2NDEyODQsLTUyNjQ1MjA2NCwyMT
+czMTExNjYsMjgxNzIzNDk5LC0xOTI2NjU4NDYyLDEwODcwNzky
+NDhdfQ==
 -->
