@@ -1,6 +1,6 @@
 ![BIBB-PBI-CV-AI-Analysis](images/hero.png)
 
-
+![BIBB-PBI-CV-AI-Analysis](https://raw.githubusercontent.com/OscarValerock/BIBB-PBI-CV-AI-Analysis/refs/heads/main/images/hero.png)
 
 [![Get the full story](https://img.shields.io/badge/Get%20Full%20Story-blue)](https://www.bibb.pro/post/power-bi-ai-cv-analysis-recruitment)
 
@@ -125,7 +125,7 @@ graph TD
     
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjQ2NDEyODQsLTUyNjQ1MjA2NCwyMT
-czMTExNjYsMjgxNzIzNDk5LC0xOTI2NjU4NDYyLDEwODcwNzky
-NDhdfQ==
+eyJoaXN0b3J5IjpbLTk2MDg3MTM4NiwtNTI2NDUyMDY0LDIxNz
+MxMTE2NiwyODE3MjM0OTksLTE5MjY2NTg0NjIsMTA4NzA3OTI0
+OF19
 -->
